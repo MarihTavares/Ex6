@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+    <link rel="stylesheet" href="ex6.css">
+</head>
+<body>
+    
+    <h1>Calculando o Peso ideal</h1>
+
+    <p>Qual o seu gênero:</p>
+
+    <input type="radio" name="opcao" id="f">
+    <label for="f">Feminino</label>
+    <input type="radio" name="opcao" id="m">
+    <label for="m">Masculino</label>
+
+    <p>
+        <label for="peso">Digite a sua altura:</label>
+        <input type="number" id="altura">
+    </p>
+
+    <button type="button" onclick="clicar()">Calcular</button>
+
+    <h3 id="total"> </h3>
+
+    <script>
+
+        function clicar() {
+
+            let opcao = document.getElementById("f")
+
+            if (opcao.checked == true) {
+
+                let height = document.getElementById("altura").value
+                const heightFormat = height.replaceAll(',','.')
+                let valor = (62.1 * heightFormat) - 44.7
+                document.getElementById("total").innerHTML = valor
+
+            } else {
+
+                let height = document.getElementById("altura").value
+
+                let valor = (72.7 * height) - 58
+                document.getElementById("total").innerHTML = valor
+
+            }
+
+        }
+
+    </script>
+   
+
+</body>
+</html>

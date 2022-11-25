@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 15px;
+    font-family: 'Patrick Hand', cursive;
+    color: #70160e;
+}
+
+p {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+input {
+   margin-left: 40px;
+   border: solid 3px #70160e;
+   border-radius: 10px; 
+   background-color: #fbffcc;
+}
+
+button {
+    margin-left: 110px;
+    background-color: #70160e;
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    border: solid #e1e3db 1px;
+    color: #e1e3db;
+}
